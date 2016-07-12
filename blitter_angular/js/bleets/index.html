@@ -1,5 +1,9 @@
 <h2>All the Bleets</h2>
 
+<h3><a data-ui-sref="bleetNew">Create a new bleet</a></h3>
+
 <div data-ng-repeat="bleet in BleetIndexViewModel.bleets">
   <a data-ui-sref="bleetShow({id: bleet.id})">{{bleet.content}}</a>
+  <a data-ui-sref="bleetEdit({id: bleet.id})">Edit</a>
+  <a data-ui-sref="bleetEdit({id: bleet.id})">Delete</a>
 </div>
