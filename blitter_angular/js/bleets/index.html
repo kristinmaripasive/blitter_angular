@@ -1,0 +1,5 @@
+<h2>All the Bleets</h2>
+
+<div data-ng-repeat="bleet in BleetIndexViewModel.bleets">
+  <a data-ui-sref="bleetShow({id: bleet.id})">{{bleet.content}}</a>
+</div>
